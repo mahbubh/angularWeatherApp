@@ -2,9 +2,9 @@
 
 /* Services */
 
-angular.module('openWeatherApp.services', ['ngResource'])
+angular.module('weatherApp.services', ['ngResource'])
 
- .factory('openWeatherMap', function($resource) {
+ .factory('weatherMap', function($resource) {
 
     var apiKey = '279b4be6d54c8bf6ea9b12275a567156';
     var apiBaseUrl = 'https://www.metaweather.com/api/';

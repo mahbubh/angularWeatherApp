@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openWeatherApp.filters', [])
+angular.module('weatherApp.filters', [])
 
   .filter('interpolate', ['version', function(version) {
     return function(text) {

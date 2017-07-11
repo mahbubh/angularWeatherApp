@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openWeatherApp.directives', [])
+angular.module('weatherApp.directives', [])
 
   .directive('appVersion', ['version', function(version) {
     return function(scope, elm, attrs) {
@@ -21,7 +21,7 @@ angular.module('openWeatherApp.directives', [])
 
       link: function(scope, element, attrs) {
         scope.getIconImageUrl = function(iconName) {
-          return (iconName ? 'https://www.metaweather.com/api//static/img/weather/png/' + iconName + '.png' : '');
+          return (iconName ? 'https://www.metaweather.com/api/static/img/weather/png/' + iconName + '.png' : '');
         };
 
         scope.parseDate = function (time) {

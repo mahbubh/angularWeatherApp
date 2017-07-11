@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('openWeatherApp', [
+angular.module('weatherApp', [
   'ngRoute',
-  'openWeatherApp.filters',
-  'openWeatherApp.services',
-  'openWeatherApp.directives',
-  'openWeatherApp.controllers',
+  'weatherApp.filters',
+  'weatherApp.services',
+  'weatherApp.directives',
+  'weatherApp.controllers',
   "iso-3166-country-codes"
 ]).
 config(['$routeProvider', function($routeProvider) {

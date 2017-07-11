@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('openWeatherApp.controllers', [])
+angular.module('weatherApp.controllers', [])
 
-  .controller('OpenWeatherCtrl',
-    ['$scope','openWeatherMap','exampleLocations','stormLocations','ISO3166',
-      function($scope,openWeatherMap,exampleLocations,stormLocations,ISO3166) {
+  .controller('weatherCtrl',
+    ['$scope','weatherMap','exampleLocations','stormLocations','ISO3166',
+      function($scope,weatherMap,exampleLocations,stormLocations,ISO3166) {
 
     $scope.message = '';
     $scope.hasState = '';
@@ -13,7 +13,7 @@ angular.module('openWeatherApp.controllers', [])
     $scope.stormLocations = stormLocations;
     $scope.iconBaseUrl = 'https://www.metaweather.com/api/';
 
-    $scope.forecast = openWeatherMap.queryForecastDaily({
+    $scope.forecast = weatherMap.queryForecastDaily({
       location: exampleLocations[ 0 ]
     });
 
@@ -27,7 +27,7 @@ angular.module('openWeatherApp.controllers', [])
 
       $scope.hasState = 'has-success';
 
-      $scope.forecast = openWeatherMap.queryForecastDaily({
+      $scope.forecast = weatherMap.queryForecastDaily({
         location: $scope.location
       });
     };
