@@ -1,0 +1,19 @@
+{ 
+  "name": "angularWeatherApp",
+  "description": "A weather forecast app",
+  "version": "0.0.1",
+  "author": {
+    "name": "Mahabub Hossain",
+    "email": "mahbubh209@gmail.com"
+  },
+  "scripts": {
+    "start": "node scripts/web-server.js"
+  },
+  "devDependencies": {
+      "phantomjs" : "*",
+      "karma" : "*",
+      "karma-junit-reporter" : "*",
+      "karma-jasmine" : "*",
+      "karma-ng-scenario" : "*"
+  }
+}
